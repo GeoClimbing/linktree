@@ -1,0 +1,74 @@
+:root {
+  --bg-1: #202c39ff;
+  --bg-2: #283845ff;
+  --yellow: #ffe45eff;
+  --blue: #3e92ccff;
+  --red: #ff4b3eff;
+  --text: rgb(218, 218, 218);
+  --text-dark: rgb(189, 189, 189);
+
+  --navbar-height: 64px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  background: var(--bg-1);
+  color: var(--text);
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+img {
+  height: 256px;
+  transition: ease-in-out all .3s;
+}
+img:hover {
+  transform: scale(1.1);
+}
+header {
+  text-align: center;
+}
+header .social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
+}
+header .social a {
+  height: 2em;
+  width: 2em;
+  text-decoration: white;
+  color: black;
+  font-size: 1.5em;
+
+  margin: 0px 15px;
+  border-radius: 1000px;
+  background: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.65);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out all .3s;
+}
+header .social a:hover {
+  transform: translateY(-10px);
+}
+header .social a.twitter:hover {
+  background: #1DA1F2;
+}
+header .social a.youtube:hover {
+  background: #FF0000;
+}
+header .social a.twitch:hover {
+  background: #a970ff;
+}
+header .social a.tiktok:hover {
+  background: #ef2950;
+}
